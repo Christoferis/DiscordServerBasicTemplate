@@ -86,7 +86,7 @@ async def add_admin(inst, word):
 
 #Remove Bot Admin 
 @claim.command(name="remove")
-@commands.check(derchecker)
+@commands.check(BotOwnerCheck)
 async def remove_admin(inst, word):
     global admin_id
     global admin_name
